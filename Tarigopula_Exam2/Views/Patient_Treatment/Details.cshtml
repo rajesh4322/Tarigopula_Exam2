@@ -1,0 +1,42 @@
+﻿@model Tarigopula_Exam02.Models.Patient_Treatment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Patient_Treatment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Physician.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Physician.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Treatment.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Treatment.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient_Treatment_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient_Treatment_Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Patient_TreatmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
